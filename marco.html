@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang='es'>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+   <link type="text/css" rel="stylesheet" href="css/styles.css">
+   <!--Import Google Icon Font-->
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import jQuery before materialize.js-->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/fabric.js"></script>
+   <!--script src="js/fabric.min.js"><!--/script-->
+   <!--script src="js/fabric.require.js"--><!--/script-->
+   <script src="js/fecha.js"></script>
+   <link rel="icon" type="image/png" href="imagenes/flechas.png"/>
+   <title>Planeación Estratégica</title>
+</head>
+<body>
+      <header>
+      <div class="fecha">
+      <script type="text/javascript">
+            document.write(fecha());
+         </script>
+      </div>
+      <picture class="logos">
+         <img src="imagenes/logo-salud.png">
+         <img src="imagenes/escudo-hgo.png">
+         <img src="imagenes/logo-hgo.png">
+         <img class="logo" src="imagenes/logo-seguro.png">
+      </picture>
+      </header>
+      <nav id='cssmenu'>
+         <ul>
+            <li class='active'><a href='#'>Salir</a></li>
+            <li><a href='#'>Plan estratégico</a></li>
+            <li><a href='#'>Elementos estratégicos</a></li>
+            <li><a href='#'>Mapeo de procesos</a></li>
+            <li><a href='#'>Marco normativo</a></li>
+         </ul>
+      </nav>
+
+      <canvas id="c" width="500" height="500"></canvas>
+      <section class="form-3">
+      <table class="menu-2">
+      <thead>
+         <tbody>  
+            <td class="admin">
+               <img src="imagenes/Administracion.png" onClick="myFunction()" title="Administración">
+            </td>
+            <td class="afiliacion">
+               <img src="imagenes/Afiliacion.png" title="Afiliación">
+            </td>
+            <td class="financiamiento">
+               <img src="imagenes/Financiamiento.png" title="Financiamiento">
+            </td>
+            <td class="gestion">
+               <img src="imagenes/Gestion.png" title="Gestión">
+            </td>
+            <td class="prospera">
+               <img src="imagenes/Propera.png" title="Prospera">
+            </td>
+            <td class="prospectiva">
+               <img src="imagenes/Prospectiva.png" title="Prospectiva">
+            </td> 
+            <td class="evaluacion">
+               <img src="imagenes/Evaluacion-seguimiento.png" title="Evaluación">
+            </td> 
+            </tbody>
+         </thead>
+      </table>
+      </section>
+         <script type="text/javascript">
+            var canvas = new fabric.Canvas('c');
+
+            var totales = [
+                            {total: 11, colores: ['#A9E2F3']},
+                            {total: 45, colores: ['#A9E2F3']},
+                            {total: 6, colores: ['#A9E2F3']},
+                            {total: 8, colores: ['#A9E2F3']},
+                            {total: 4, colores: ['#A9E2F3']}
+                                 ];
+            var iContTotales = 0;
+            var pujaTotalBase = 30;
+            var leftBase = 200;
+            var topBase = 250;
+            for (var total in totales){
+               var pujaTotal = pujaTotalBase * iContTotales;
+              for (iCont=0; iCont < totales[total].total; iCont++){
+                var puja = 2 / totales[total].total;
+                var startAngle = iCont * puja;
+                var endAngle = startAngle + puja;
+                var circle = new fabric.Circle({
+                        radius: 40+pujaTotal,
+                        left: leftBase-pujaTotal,
+                        top: topBase+pujaTotal,
+                        angle: -90,
+                        startAngle:startAngle*Math.PI,
+                        endAngle:endAngle*Math.PI,
+                        stroke: totales[total].colores[0],
+                        strokeWidth: 25,
+                        fill: '',
+                        hasRotatingPoint: false,
+                           hasBorders: false,
+                        hasControls: false
+                });
+                canvas.add(circle);
+              }
+              iContTotales = iContTotales + 1;
+            }
+         </script>
+      <footer class="footer"><a>&copy; Régimen Estatal de Protección Social en Salud. Avenida Revolución Número 200 esquina con Daniel Cerecedo, Colonia Periodistas, Pachuca, Hidalgo. Código Postal Teléfono (01 771) 153 00 33 Ext. 101</a></footer>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+          });
+        });
+     </script>
+</body>
+</html>

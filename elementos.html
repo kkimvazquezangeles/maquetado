@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='es'>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"-->
+   <link type="text/css" rel="stylesheet" href="css/styles.css">
+   <!--Import Google Icon Font-->
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import jQuery before materialize.js-->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/fecha.js"></script>
+   <link rel="icon" type="image/png" href="imagenes/flechas.png"/>
+   <title>Planeación Estratégica</title>
+</head>
+<body>
+      <header>
+      <div class="fecha">
+         <script type="text/javascript">
+            document.write(fecha());
+         </script>
+      </div>
+      <picture class="logos">
+         <img src="imagenes/logo-salud.png">
+         <img src="imagenes/escudo-hgo.png">
+         <img src="imagenes/logo-hgo.png">
+         <img class="logo" src="imagenes/logo-seguro.png">
+      </picture>
+      </header>
+      <nav id='cssmenu'>
+         <ul>
+            <li class='active'><a href='#'>Salir</a></li>
+            <li><a href='#'>Plan estratégico</a></li>
+            <li><a href='#'>Elementos estratégicos</a></li>
+            <li><a href='#'>Mapeo de procesos</a></li>
+            <li><a href='#'>Marco normativo</a></li>
+         </ul>
+      </nav>
+	   <section class="form-3">
+         <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">grade</i>Misión</div>
+            <div class="collapsible-body"><p>Brindar protección financiera para el acceso a servicios médicos incluiodos en el catálogo universal de servicios de salud que apoye la economía familiar de los afiliados al seguro popular, a través de procesos de afiliación a la població hidalguense no derechohabiente de la seguridad social, gestion del servicio médico, administración, control y uso eficiente de los recursos dentro de un marco de transparencia y rendición de cuentas. Operando de manera eficiente, eficaz y con calidad, bajo un código de ética, que permita la sustentabilidad del organismo en la entidad.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">visibility</i>Visión</div>
+            <div class="collapsible-body"><p>Para el 2018, el régimen de protección social en salud de Hidalgo logrará ser reconocido por sus afilidados como el sistema que garantiza financieramente el acceso a servicios médicos, mejorando las condiciones de salud de la entidad.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">trending_up</i>Alcance institucional</div>
+            <div class="collapsible-body"><p>El régimen estatal de protección social en salud en Hidalgo tiene como objetivo general garantizar el acceso a la población hidalguense que no sea derechohabiente de las instituciones de seguridad social, a un esquema de apoyo financiero que les permita contar con servicios médico-quirúrgicos, farmacéuticos y hospitalarios con especial énfasis en los sectores más vulnerables y en desventaja social.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">turned_in_not</i>Estrategia general</div>
+            <div class="collapsible-body"><p>Posicionar sólidamente al seguro popular entre sus afiliados como la institución que les garantiza el financiamiento y la protección de su derecho a la salud.</p></div>
+          </li>
+        </ul>
+	   </section>
+	   <footer class="footer"><a>&copy; Régimen Estatal de Protección Social en Salud. Avenida Revolución Número 200 esquina con Daniel Cerecedo, Colonia Periodistas, Pachuca, Hidalgo. Código Postal Teléfono (01 771) 153 00 33 Ext. 101</a></footer>
+		<script type="text/javascript">
+        $(document).ready(function(){
+          $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+          });
+        });
+	  </script>
+</body>
+</html>
