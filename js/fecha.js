@@ -1,6 +1,3 @@
-function myFunction() {
-	document.getElementById("ima").style.background = "rgba(80, 166, 225, 0.53)";
-}
 
 function fecha() {
 	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");

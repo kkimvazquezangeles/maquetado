@@ -1,0 +1,54 @@
+.general {
+	text-align: center;
+	width: 10em;
+	color: black;
+}
+
+.prospera {
+	border-color: #ffc500;
+	border-style: solid;
+    border-width: .2em;
+    background: #ffd500;
+}
+
+.afiliacion {
+	border-color: #ff860e;
+	border-style: solid;
+    border-width: .2em;
+    background: #ffad33;
+}
+
+.gestion {
+	border-color: #735cae;
+	border-style: solid;
+    border-width: .2em;
+    background: #8e7cc3;
+}
+
+.financiamiento {
+	border-color: #ba7220;
+	border-style: solid;
+    border-width: .2em;
+    background: #c9a164;
+}
+
+.prospectiva {
+	border-color: #3d86c6;
+	border-style: solid;
+    border-width: .2em;
+    background: #4ea6e0;
+}
+
+.administracion {
+	border-color: #4d7a84;
+	border-style: solid;
+    border-width: .2em;
+    background: #73c4c7;
+}
+
+.evaluacion {
+	border-color: #cc0101;
+	border-style: solid;
+    border-width: .2em;
+    background: #e06666;
+}

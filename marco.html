@@ -9,12 +9,13 @@
    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--Import jQuery before materialize.js-->
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="js/d3.v4.js"></script>
+   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
    <script type="text/javascript" src="js/materialize.min.js"></script>
    <script src="js/script.js"></script>
    <script src="js/fabric.js"></script>
-   <!--script src="js/fabric.min.js"><!--/script-->
-   <!--script src="js/fabric.require.js"--><!--/script-->
    <script src="js/fecha.js"></script>
    <link rel="icon" type="image/png" href="imagenes/flechas.png"/>
    <title>Planeación Estratégica</title>
@@ -24,12 +25,12 @@
       <div class="fecha">
       <script type="text/javascript">
             document.write(fecha());
-         </script>
+      </script>
       </div>
       <picture class="logos">
          <img src="imagenes/logo-salud.png">
          <img src="imagenes/escudo-hgo.png">
-         <img src="imagenes/logo-hgo.png">
+          <!--img src="imagenes/logo-hgo.png"-->
          <img class="logo" src="imagenes/logo-seguro.png">
       </picture>
       </header>
@@ -37,13 +38,16 @@
          <ul>
             <li class='active'><a href='#'>Salir</a></li>
             <li><a href='#'>Plan estratégico</a></li>
-            <li><a href='#'>Elementos estratégicos</a></li>
-            <li><a href='#'>Mapeo de procesos</a></li>
-            <li><a href='#'>Marco normativo</a></li>
+             <li><a href='elementos.html'>Elementos estratégicos</a></li>
+             <li><a href='mapeo.html'>Mapeo de procesos</a></li>
+             <li><a href='marco.html'>Marco normativo</a></li>
          </ul>
       </nav>
 
-      <canvas id="c" width="500" height="500"></canvas>
+
+      <div id="normatividad">
+
+      </div>
       <section class="form-3">
       <table class="menu-2">
       <thead>
@@ -72,46 +76,26 @@
             </tbody>
          </thead>
       </table>
-      </section>
-         <script type="text/javascript">
-            var canvas = new fabric.Canvas('c');
 
-            var totales = [
-                            {total: 11, colores: ['#A9E2F3']},
-                            {total: 45, colores: ['#A9E2F3']},
-                            {total: 6, colores: ['#A9E2F3']},
-                            {total: 8, colores: ['#A9E2F3']},
-                            {total: 4, colores: ['#A9E2F3']}
-                                 ];
-            var iContTotales = 0;
-            var pujaTotalBase = 30;
-            var leftBase = 200;
-            var topBase = 250;
-            for (var total in totales){
-               var pujaTotal = pujaTotalBase * iContTotales;
-              for (iCont=0; iCont < totales[total].total; iCont++){
-                var puja = 2 / totales[total].total;
-                var startAngle = iCont * puja;
-                var endAngle = startAngle + puja;
-                var circle = new fabric.Circle({
-                        radius: 40+pujaTotal,
-                        left: leftBase-pujaTotal,
-                        top: topBase+pujaTotal,
-                        angle: -90,
-                        startAngle:startAngle*Math.PI,
-                        endAngle:endAngle*Math.PI,
-                        stroke: totales[total].colores[0],
-                        strokeWidth: 25,
-                        fill: '',
-                        hasRotatingPoint: false,
-                           hasBorders: false,
-                        hasControls: false
-                });
-                canvas.add(circle);
-              }
-              iContTotales = iContTotales + 1;
-            }
-         </script>
+          <table class="menu-2">
+              <td>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">play_for_work</i>
+          </button>
+              </td>
+              <td>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">play_for_work</i>
+          </button>
+              </td>
+              <td>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">play_for_work</i>
+          </button>
+              </td>
+              </table>
+      </section>
+
       <footer class="footer"><a>&copy; Régimen Estatal de Protección Social en Salud. Avenida Revolución Número 200 esquina con Daniel Cerecedo, Colonia Periodistas, Pachuca, Hidalgo. Código Postal Teléfono (01 771) 153 00 33 Ext. 101</a></footer>
       <script type="text/javascript">
         $(document).ready(function(){
@@ -120,5 +104,6 @@
           });
         });
      </script>
+      <script type="text/javascript" src="js/normatividad.js"></script>
 </body>
 </html>
