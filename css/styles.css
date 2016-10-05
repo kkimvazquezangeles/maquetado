@@ -361,8 +361,21 @@ h1 {
     position: relative; /* For the submit button positioning */
     /* Styles */
     border-radius: .1em;
-    background: linear-gradient(rgba(85, 164, 195, 0.28), #ffffff 10%);
+    background: linear-gradient(rgba(246, 246, 246, 0.28), #ffffff 10%);
     box-sizing: border-box;
+    color:black;
+}
+
+.form-21 {
+    width: 80%;
+    margin: 1em auto 1em;
+    padding: 10px;
+    position: relative; /* For the submit button positioning */
+    /* Styles */
+    border-radius: .1em;
+    /*background: linear-gradient(rgba(246, 246, 246, 0.28), #ffffff 10%);*/
+    box-sizing: border-box;
+    color:black;
 }
 
 .menu-2 {
@@ -546,33 +559,51 @@ ul li {
     padding-top: 2em;
 }
 
-.btn {
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 36px;
-  line-height: 36px;
-  outline: 0;
-  padding: 0 2rem;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-}
 
-.btn {
+.btn1, .btn-large {
   text-decoration: none;
-  color: #fff;
-  background-color: #55a4c3;
+  color: #7a7575;
+  background-color: rgb(214, 196, 118);
   text-align: center;
-  letter-spacing: .5px;
+  /* letter-spacing: .5px; */
   transition: .2s ease-out;
   cursor: pointer;
 }
 
-.btn, .btn-large {
+.btn2, .btn-large {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #55a4c3;
+  color: #7a7575;
+  background-color: rgb(239, 143, 182);
+  text-align: center;
+  /* letter-spacing: .5px; */
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn3, .btn-large {
+  text-decoration: none;
+  color: #7a7575;
+  background-color: rgb(211, 235, 211);
+  text-align: center;
+  /* letter-spacing: .5px; */
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn4, .btn-large {
+  text-decoration: none;
+  color: #7a7575;
+  background-color: rgb(254, 208, 200);
+  text-align: center;
+  /* letter-spacing: .5px; */
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn5, .btn-large {
+  text-decoration: none;
+  color: #7a7575;
+  background-color: rgb(200, 197, 196);
   text-align: center;
   /* letter-spacing: .5px; */
   transition: .2s ease-out;
@@ -585,10 +616,9 @@ ul li {
   border-radius: 2px;
   display: inline-block;
   height: 36px;
-  line-height: 36px;
+  line-height: 35px;
   outline: 0;
-  padding: 0 2rem;
-  text-transform: uppercase;
+  padding: 0 1em;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
@@ -620,7 +650,7 @@ ul li {
 
 i.right {
     float: right;
-    margin-left: 15px;
+    margin-left: 4px;
 }
 
 .btn:hover, .btn-large:hover {

@@ -3,7 +3,8 @@
               if (error) throw error;
               //document.body.appendChild(xml.documentElement);
               $("#normatividad").html(xml.documentElement.outerHTML);
-              $(".prospectiva").mouseover(function() {
+              $(".prospectiva").click(function() {
+                  document.getElementById('oculto').style.display='table';
                   $(".prospectiva").css("stroke", "rgb(214, 115, 57)");
                   $("#svg_60").css("stroke", "rgb(115, 196, 199)");
                   $("#svg_61").css("stroke", "rgb(115, 196, 199)");
@@ -24,9 +25,9 @@
                   
                   $("#path176").css("stroke", "rgb(115, 196, 199)");
                   //alert("here");
-              });
 
-              /*$(".prospectiva").mouseout(function() {
+
+             /*$(".prospectiva").mouseout(function() {
                   $(".prospectiva").css("stroke", "rgb(200,197,196)");
                   $("#svg_60").css("stroke", "rgb(200,197,196)");
                   $("#svg_61").css("stroke", "rgb(158,156,155)");
@@ -47,9 +48,10 @@
 
                   $("#path176").css("stroke", "rgb(206,184,76)");
 
-              }); */
-
-               $(".evaluacion").mouseover(function() {
+              });*/
+});
+               $(".evaluacion").click(function() {
+               document.getElementById('oculto').style.display='table';
                   $(".evaluacion").css("stroke", "rgb(224, 102, 102, 0.31)");
                   $("#svg_62").css("stroke", "rgb(216, 117, 117)");
 
@@ -66,7 +68,7 @@
                   $("#path176").css("stroke", "rgb(216, 117, 117)");
 
               });
-              $(".evaluacion").mouseout(function() {
+              /*$(".evaluacion").mouseout(function() {
                   $(".evaluacion").css("stroke", "rgb(200,197,196)");
                   $("#svg_62").css("stroke", "rgb(200,197,196)");
 
@@ -82,9 +84,10 @@
                   $("#path170").css("stroke", "rgb(214,196,118)");
                   $("#path176").css("stroke", "rgb(206,184,76)");
 
-              });
+              });*/
 
-              $(".prospera").mouseover(function() {
+              $(".prospera").click(function() {
+              document.getElementById('oculto').style.display='table';
                   $(".prospera").css("stroke", "rgb(255, 253, 4, 0.30)");
                   $("#svg_51").css("stroke", "rgb(255, 214, 5)");
                   $("#svg_60").css("stroke", "rgb(255, 214, 5)");
@@ -119,7 +122,7 @@
 
               });
 
-              $(".prospera").mouseout(function() {
+              /*$(".prospera").mouseout(function() {
                   $(".prospera").css("stroke", "rgb(200,197,196)");
                   $("#svg_51").css("stroke", "rgb(200,197,196)");
                   $("#svg_60").css("stroke", "rgb(200,197,196)");
@@ -152,9 +155,10 @@
                   $("#path170").css("stroke", "rgb(214,196,118)");
                   $("#path176").css("stroke", "rgb(206,184,76)");
 
-              });
+              });*/
 
-               $(".gestion").mouseover(function() {
+               $(".gestion").click(function() {
+               document.getElementById('oculto').style.display='table';
                   $(".gestion").css("stroke", "rgb(142, 124, 195, 0.4)");
                   $("#svg_62").css("stroke", "rgb(143, 125, 196)");
                   $("#svg_64").css("stroke", "rgb(143, 125, 196)");
@@ -186,8 +190,8 @@
 
               });
 
-              $(".gestion").mouseout(function() {
-                  $(".prospera").css("stroke", "rgb(200,197,196)");
+              /*$(".gestion").mouseout(function() {
+                  $(".gestion").css("stroke", "rgb(200,197,196)");
                   $("#svg_62").css("stroke", "rgb(200,197,196)");
                   $("#svg_64").css("stroke", "rgb(200,197,196)");
                   $("#svg_106").css("stroke", "rgb(200,197,196)");
@@ -216,9 +220,10 @@
 
                   $("#path170").css("stroke", "rgb(214,196,118)");
 
-              });
+              });*/
 
-               $(".financiamiento").mouseover(function() {
+               $(".financiamiento").click(function() {
+               document.getElementById('oculto').style.display='table';
                   $(".financiamiento").css("stroke", "rgb(202, 162, 100, 0.5)");
                   $("#svg_62").css("stroke", "rgb(202, 162, 101)");
                   $("#svg_97").css("stroke", "rgb(202, 162, 101)");
@@ -240,7 +245,7 @@
 
               });
 
-              $(".financiamiento").mouseout(function() {
+              /*$(".financiamiento").mouseout(function() {
                   $(".financiamiento").css("stroke", "rgb(200,197,196)");
                   $("#svg_62").css("stroke", "rgb(200,197,196)");
                   $("#svg_97").css("stroke", "rgb(158,156,155)");
@@ -261,9 +266,10 @@
                   $("#path176").css("stroke", "rgb( 206,184,76)");
 
 
-              });
+              });*/
 
-              $(".afiliacion").mouseover(function() {
+              $(".afiliacion").click(function() {
+              document.getElementById('oculto').style.display='table';
                   $(".afiliacion").css("stroke", "rgb(255, 174, 52, 0.41)");
                   $("#svg_60").css("stroke", "rgb(255, 174, 52)");
                   $("#svg_61").css("stroke", "rgb(255, 174, 52)");
@@ -288,7 +294,7 @@
 
               });
 
-              $(".afiliacion").mouseout(function() {
+              /*$(".afiliacion").mouseout(function() {
                   $(".afiliacion").css("stroke", "rgb(200,197,196)");
                   $("#svg_60").css("stroke", "rgb(200,197,196)");
                   $("#svg_61").css("stroke", "rgb(158,156,155)");
@@ -311,9 +317,12 @@
                   $("#path170").css("stroke", "rgb(214,196,118)");
                   $("#path172").css("stroke", "rgb(206,184,76)");
 
-              });
+              });*/
 
-               $(".admin").mouseover(function() {
+               $(".admin").click(function() {
+               //$('.prospectiva').on('mouseout');
+                 //   document.getElementById('oculto').style.display = 'none';
+                  document.getElementById('oculto').style.display='table';
                   $(".admin").css("stroke", "rgb(80, 166, 225, 0.53)");
                   $("#svg_60").css("stroke", "rgb(79, 166, 224)");
 
@@ -330,7 +339,7 @@
 
               });
 
-              $(".admin").mouseout(function() {
+              /*$(".admin").mouseout(function() {
                   $(".admin").css("stroke", "rgb(200,197,196)");
                   $("#svg_60").css("stroke", "rgb(200,197,196)");
 
@@ -345,33 +354,7 @@
 
                   $("#path170").css("stroke", "rgb(214,196,118)");
 
-              });
-
-
-              // CLICK
-              $(".prospectiva").click(function() {
-                    alert( "Handler for .click() called." );
-                  $(".prospectiva").css("stroke", "rgb(214, 115, 57)");
-                  $("#svg_60").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_61").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_63").css("stroke", "rgb(115, 196, 199)");
-
-                  $("#svg_122").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_132").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_139").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_142").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_143").css("stroke", "rgb(115, 196, 199)");
-                  $("#svg_145").css("stroke", "rgb(115, 196, 199)");
-
-                  $("#path150").css("stroke", "rgb(115, 196, 199)");
-
-                  $("#path154").css("stroke", "rgb(115, 196, 199)");
-                  $("#path158").css("stroke", "rgb(115, 196, 199)");
-                  $("#path160").css("stroke", "rgb(115, 196, 199)");
-
-                  $("#path176").css("stroke", "rgb(115, 196, 199)");
-                  //alert("here");
-              });
+              });*/
 
 
           });

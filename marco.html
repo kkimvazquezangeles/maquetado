@@ -11,12 +11,13 @@
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script type="text/javascript" src="js/d3.v4.js"></script>
    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
    <script type="text/javascript" src="js/materialize.min.js"></script>
    <script src="js/script.js"></script>
    <script src="js/fabric.js"></script>
    <script src="js/fecha.js"></script>
+    <script src="js/circulo.js"></script>
    <link rel="icon" type="image/png" href="imagenes/flechas.png"/>
    <title>Planeación Estratégica</title>
 </head>
@@ -37,66 +38,67 @@
       <nav id='cssmenu'>
          <ul>
             <li class='active'><a href='#'>Salir</a></li>
-            <li><a href='#'>Plan estratégico</a></li>
+            <li><a href='plan.html'>Plan estratégico</a></li>
              <li><a href='elementos.html'>Elementos estratégicos</a></li>
              <li><a href='mapeo.html'>Mapeo de procesos</a></li>
              <li><a href='marco.html'>Marco normativo</a></li>
          </ul>
       </nav>
 
-
+      <div id="seccion">
       <div id="normatividad">
 
-      </div>
+      </div></div>
       <section class="form-3">
       <table class="menu-2">
       <thead>
          <tbody>  
             <td class="admin">
-               <img src="imagenes/Administracion.png" onClick="myFunction()" title="Administración">
+               <img id="admin" src="imagenes/Administracion.png" title="Administración" onclick="mostrar()">
             </td>
             <td class="afiliacion">
-               <img src="imagenes/Afiliacion.png" title="Afiliación">
+               <img id="afiliacion" src="imagenes/Afiliacion.png" title="Afiliación" onclick="mostrar()">
             </td>
             <td class="financiamiento">
-               <img src="imagenes/Financiamiento.png" title="Financiamiento">
+               <img id="financiamiento" src="imagenes/Financiamiento.png" title="Financiamiento" onclick="mostrar()">
             </td>
             <td class="gestion">
-               <img src="imagenes/Gestion.png" title="Gestión">
+               <img id="gestion" src="imagenes/Gestion.png" title="Gestión" onclick="mostrar()">
             </td>
             <td class="prospera">
-               <img src="imagenes/Propera.png" title="Prospera">
+               <img id="prospera" src="imagenes/Propera.png" title="Prospera" onclick="mostrar()">
             </td>
             <td class="prospectiva">
-               <img src="imagenes/Prospectiva.png" title="Prospectiva">
+               <img id="prospectiva" src="imagenes/Prospectiva.png" title="Prospectiva" onclick="mostrar()">
             </td> 
             <td class="evaluacion">
-               <img src="imagenes/Evaluacion-seguimiento.png" title="Evaluación">
+               <img id="evaluacion" src="imagenes/Evaluacion-seguimiento.png" title="Evaluación" onclick="mostrar()">
             </td> 
             </tbody>
          </thead>
       </table>
 
-          <table class="menu-2">
+          <table id="oculto" style="display:none;" class="menu-2">
               <td>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">play_for_work</i>
-          </button>
+                  <a class="btn btn1 waves-effect waves-light" href="doctos/ley_salud.pdf" download="Ley General de Salud.pdf">Sistema de Protección Social en Salud<i class="material-icons right">play_for_work</i></a>
               </td>
               <td>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">play_for_work</i>
-          </button>
+                  <a class="btn btn2 waves-effect waves-light" href="doctos/programa_institucional.pdf" download="Programa Institucional de los Servicios.pdf">Programa Institucional de Servicios<i class="material-icons right">play_for_work</i></a>
               </td>
               <td>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">play_for_work</i>
-          </button>
+                  <a class="btn btn3 waves-effect waves-light" href="doctos/sectorial.pdf" download="Programa Sectorial de Salud.pdf">Programa Sectorial de Salud<i class="material-icons right">play_for_work</i></a>
+              </td>
+              <td>
+                  <a class="btn btn4 waves-effect waves-light" href="doctos/ped.pdf" download="Plan Estatal Desarrollo.pdf">Plan Estatal de Desarrollo<i class="material-icons right">play_for_work</i></a>
+              </td>
+              <td>
+                  <a class="btn btn5 waves-effect waves-light" href="doctos/pnd.pdf" download="Plan Nacional Desarrollo.pdf">Plan Nacional de Desarrollo<i class="material-icons right">play_for_work</i></a>
               </td>
               </table>
       </section>
 
       <footer class="footer"><a>&copy; Régimen Estatal de Protección Social en Salud. Avenida Revolución Número 200 esquina con Daniel Cerecedo, Colonia Periodistas, Pachuca, Hidalgo. Código Postal Teléfono (01 771) 153 00 33 Ext. 101</a></footer>
+      <script type="text/javascript" src="js/normatividad.js"></script>
       <script type="text/javascript">
         $(document).ready(function(){
           $('.collapsible').collapsible({
@@ -104,6 +106,161 @@
           });
         });
      </script>
-      <script type="text/javascript" src="js/normatividad.js"></script>
+<script>
+$('#seccion').click(function() {
+    document.getElementById('oculto').style.display='none';
+                  $(".prospectiva").css("stroke", "rgb(200,197,196)");
+                  $("#svg_60").css("stroke", "rgb(200,197,196)");
+                  $("#svg_61").css("stroke", "rgb(158,156,155)");
+                  $("#svg_63").css("stroke", "rgb(158,156,155)");
+
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_132").css("stroke", "rgb(252,192,180)");
+                  $("#svg_139").css("stroke", "rgb(254,208,200)");
+                  $("#svg_142").css("stroke", "rgb(254,208,200)");
+                  $("#svg_143").css("stroke", "rgb(255,167,149)");
+                  $("#svg_145").css("stroke", "rgb(254,208,200)");
+
+                  $("#path150").css("stroke", "rgb(211,235,211)");
+
+                  $("#path154").css("stroke", "rgb(239,143,182)");
+                  $("#path158").css("stroke", "rgb(239,143,182)");
+                  $("#path160").css("stroke", "rgb(230,109,159)");
+
+                  $("#path176").css("stroke", "rgb(206,184,76)");
+
+                  $(".evaluacion").css("stroke", "rgb(200,197,196)");
+                  $("#svg_62").css("stroke", "rgb(200,197,196)");
+
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_123").css("stroke", "rgb(252,192,180)");
+
+                  $("#svg_155").css("stroke", "rgb(211,235,211)");
+                  $("#path144").css("stroke", "rgb(168,216,167)");
+
+                  $("#path154").css("stroke", "rgb(239,143,182)");
+                  $("#path156").css("stroke", "rgb(230,109,159)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+                  $("#path176").css("stroke", "rgb(206,184,76)");
+
+                  $(".gestion").css("stroke", "rgb(200,197,196)");
+                  $("#svg_62").css("stroke", "rgb(200,197,196)");
+                  $("#svg_64").css("stroke", "rgb(200,197,196)");
+                  $("#svg_106").css("stroke", "rgb(200,197,196)");
+
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_123").css("stroke", "rgb(252,192,180)");
+                  $("#svg_125").css("stroke", "rgb(255,167,149)");
+                  $("#svg_126").css("stroke", "rgb(252,192,180)");
+                  $("#svg_127").css("stroke", "rgb(254,208,200)");
+                  $("#svg_128").css("stroke", "rgb(255,167,149)");
+                  $("#svg_129").css("stroke", "rgb(252,192,180)");
+                  $("#svg_132").css("stroke", "rgb(252,192,180)");
+                  $("#svg_135").css("stroke", "rgb(252,192,180)");
+
+                  $("#svg_155").css("stroke", "rgb(211,235,211)");
+                  $("#path144").css("stroke", "rgb(168,216,167)");
+                  $("#path148").css("stroke", "rgb(168,216,167)");
+                  $("#path150").css("stroke", "rgb(211,235,211)");
+                  $("#path152").css("stroke", "rgb(168,216,167)");
+
+                  $("#path156").css("stroke", "rgb(230,109,159)");
+                  $("#path162").css("stroke", "rgb(239,143,182)");
+                  $("#path164").css("stroke", "rgb(230,109,159)");
+                  $("#path166").css("stroke", "rgb(239,143,182)");
+                  $("#path168").css("stroke", "rgb(230,109,159)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+
+                  $(".prospera").css("stroke", "rgb(200,197,196)");
+                  $("#svg_51").css("stroke", "rgb(200,197,196)");
+                  $("#svg_60").css("stroke", "rgb(200,197,196)");
+                  $("#svg_61").css("stroke", "rgb(158,156,155)");
+                  $("#path62").css("stroke", "rgb(200,197,196)");
+                  $("#svg_63").css("stroke", "rgb(158,156,155)");
+
+                  $("#svg_110").css("stroke", "rgb(255,167,149)");
+                  $("#svg_113").css("stroke", "rgb(255,167,149)");
+                  $("#svg_118").css("stroke", "rgb(254,208,200)");
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_123").css("stroke", "rgb(252,192,180)");
+                  $("#svg_125").css("stroke", "rgb(255,167,149)");
+                  $("#svg_126").css("stroke", "rgb(252,192,180)");
+                  $("#svg_127").css("stroke", "rgb(254,208,200)");
+                  $("#svg_132").css("stroke", "rgb(252,192,180)");
+
+                  $("#svg_155").css("stroke", "rgb(211,235,211)");
+                  $("#path144").css("stroke", "rgb(168,216,167)");
+                  $("#svg_157").css("stroke", "rgb(211,235,211)");
+                  $("#path148").css("stroke", "rgb(168,216,167)");
+
+                  $("#path154").css("stroke", "rgb(239,143,182)");
+                  $("#path158").css("stroke", "rgb(239,143,182)");
+                  $("#path160").css("stroke", "rgb(230,109,159)");
+                  $("#path162").css("stroke", "rgb(239,143,182)");
+                  $("#path166").css("stroke", "rgb(230,109,159)");
+                  $("#path168").css("stroke", "rgb(239,143,182)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+                  $("#path176").css("stroke", "rgb(206,184,76)");
+
+                  $(".financiamiento").css("stroke", "rgb(200,197,196)");
+                  $("#svg_62").css("stroke", "rgb(200,197,196)");
+                  $("#svg_97").css("stroke", "rgb(158,156,155)");
+
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_134").css("stroke", "rgb(252,192,180)");
+                  $("#svg_148").css("stroke", "rgb(255,167,149)");
+                  $("#svg_153").css("stroke", "rgb(252,192,180)");
+
+                  $("#path144").css("stroke", "rgb(168,216,167)");
+                  $("#path150").css("stroke", "rgb(211,235,211)");
+
+                  $("#path156").css("stroke", "rgb(230,109,159)");
+                  $("#path158").css("stroke", "rgb(239,143,182)");
+                  $("#path160").css("stroke", "rgb(230,109,159)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+                  $("#path176").css("stroke", "rgb( 206,184,76)");
+
+                  $(".afiliacion").css("stroke", "rgb(200,197,196)");
+                  $("#svg_60").css("stroke", "rgb(200,197,196)");
+                  $("#svg_61").css("stroke", "rgb(158,156,155)");
+                  $("#svg_62").css("stroke", "rgb(200,197,196)");
+                  $("#svg_63").css("stroke", "rgb(158,156,155)");
+
+                  $("#svg_116").css("stroke", "rgb(255,167,149)");
+                  $("#svg_117").css("stroke", "rgb(252,192,180)");
+                  $("#svg_119").css("stroke", "rgb(255,167,149)");
+                  $("#svg_122").css("stroke", "rgb(255,167,149)");
+                  $("#svg_132").css("stroke", "rgb(252,192,180)");
+
+                  $("#svg_155").css("stroke", "rgb(211,235,211)");
+                  $("#path144").css("stroke", "rgb(168,216,167)");
+                  $("#path148").css("stroke", "rgb(168,216,167)");
+
+                  $("#path156").css("stroke", "rgb(230,109,159)");
+                  $("#path158").css("stroke", "rgb(239,143,182)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+                  $("#path172").css("stroke", "rgb(206,184,76)");
+
+                  $(".admin").css("stroke", "rgb(200,197,196)");
+                  $("#svg_60").css("stroke", "rgb(200,197,196)");
+
+                  $("#svg_142").css("stroke", "rgb(254,208,200)");
+                  $("#svg_143").css("stroke", "rgb(255,167,149)");
+                  $("#svg_146").css("stroke", "rgb(255,167,149)");
+                  $("#svg_147").css("stroke", "rgb(252,192,180)");
+
+                  $("#path150").css("stroke", "rgb(211,235,211)");
+
+                  $("#path160").css("stroke", "rgb(230,109,159)");
+
+                  $("#path170").css("stroke", "rgb(214,196,118)");
+});
+</script>
+
 </body>
 </html>
