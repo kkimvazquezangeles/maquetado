@@ -109,6 +109,7 @@
         .st54{stroke:#A09F9F;stroke-width:1.9532;stroke-miterlimit:10;}
 
     </style>
+
   <g
      transform="matrix(0.76308244,0,0,0.77861309,0.7452263,0.77557651)"
      id="g6">
@@ -1262,6 +1263,7 @@
        inkscape:connector-curvature="0"
        style="fill:#010202" />
     <rect
+       onclick='alert("Hola")'
        stroke-miterlimit="10"
        x="150"
        y="280"

@@ -4,7 +4,7 @@
               //document.body.appendChild(xml.documentElement);
               $("#mapeo").html(xml.documentElement.outerHTML);
               //PROSPERA
-              $("#svg_59").mouseover(function() {
+              $("#svg_59").click(function() {
                   $("#svg_268").css({'fill':'#F6E82B','stroke':'#e0c556'});
                   $("#svg_310").css({'fill':'#F6E82B','stroke':'#e0c556'});
                   $("#svg_564").css({'fill':'#F6E82B','stroke':'#e0c556'});
@@ -63,7 +63,7 @@
                   //alert("here"); fill:#009FE3;
               });
 
-              $("#svg_59").mouseout(function() {
+              /*$("#svg_59").mouseout(function() {
                   $("#svg_268").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_310").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_380").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
@@ -120,10 +120,10 @@
                   $("#svg_1446").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
 
 
-              });
+              });*/
 
               //AFILIACION
-              $("#svg_70").mouseover(function() {
+              $("#svg_70").click(function() {
                   $("#svg_480").css({'fill':'#f8ac37','stroke':'#ef7819'});
                   $("#svg_528").css({'fill':'#f8ac37','stroke':'#ef7819'});
                   $("#svg_564").css({'fill':'#f8ac37','stroke':'#ef7819'});
@@ -148,7 +148,7 @@
                   $("#svg_1710").css({'fill':'#ef7819'});
               });
 
-              $("#svg_70").mouseout(function() {
+              /*$("#svg_70").mouseout(function() {
                   $("#svg_480").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_528").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_564").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
@@ -172,10 +172,10 @@
                   $("#svg_1708").css({'stroke':'#E2E2E1'});
                   $("#svg_1710").css({'fill':'#E2E2E1'});
 
-              });
+              });*/
 
               //GESTION
-              $("#svg_71").mouseover(function() {
+              $("#svg_71").click(function() {
                   $("#svg_606").css({'fill':'#8C7BB8','stroke':'#65509C'});
                   $("#svg_648").css({'stroke':'#65509C'});
                   $("#svg_685").css({'fill':'#8C7BB8','stroke':'#65509C'});
@@ -227,7 +227,7 @@
 
               });
 
-              $("#svg_71").mouseout(function() {
+              /*$("#svg_71").mouseout(function() {
                   $("#svg_606").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_648").css({'stroke':'#E2E2E1'});
                   $("#svg_685").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
@@ -275,10 +275,10 @@
                   $("#svg_1790").css({'fill':'#E2E2E1'});
                   $("#svg_1793").css({'stroke':'#E2E2E1'});
                   $("#svg_1795").css({'fill':'#E2E2E1'});
-              });
+              });*/
 
               //FINANCIAMIENTO
-              $("#svg_132").mouseover(function() {
+              $("#svg_132").click(function() {
                   $("#svg_903").css({'fill':'#ca9e67','stroke':'#7d4e24'});
                   $("#svg_936").css({'fill':'none','stroke':'#7d4e24'});
                   $("#svg_957").css({'fill':'none','stroke':'#7d4e24'});
@@ -315,7 +315,7 @@
                   $("#svg_1821").css({'fill':'#7d4e24','stroke':'none'});
               });
 
-              $("#svg_132").mouseout(function() {
+              /*$("#svg_132").mouseout(function() {
                   $("#svg_903").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_936").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_957").css({'fill':'none','stroke':'#E2E2E1'});
@@ -350,10 +350,10 @@
                   $("#svg_1861").css({'fill':'#E2E2E1','stroke':'none'});
                   $("#svg_1819").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1821").css({'fill':'#E2E2E1','stroke':'none'});
-              });
+              });*/
 
               //ADMINISTRACIÓN
-              $("#svg_156").mouseover(function() {
+              $("#svg_156").click(function() {
                   $("#svg_1068").css({'fill':'#009fe3','stroke':'#1d71b8'});
                   $("#svg_1114").css({'fill':'none','stroke':'#1d71b8'});
                   $("#svg_1138").css({'fill':'none','stroke':'#1d71b8'});
@@ -382,7 +382,7 @@
                   $("#svg_1887").css({'fill':'#1d71b8','stroke':'none'});
               });
 
-              $("#svg_156").mouseout(function() {
+              /*$("#svg_156").mouseout(function() {
                   $("#svg_1068").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_1114").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1138").css({'fill':'none','stroke':'#E2E2E1'});
@@ -410,11 +410,11 @@
                   $("#svg_1882").css({'fill':'#E2E2E1','stroke':'none'});
                   $("#svg_1885").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1887").css({'fill':'#E2E2E1','stroke':'none'});
-              });
+              });*/
 
 
               //PROSPECTIVA
-              $("#svg_174").mouseover(function() {
+              $("#svg_174").click(function() {
                   $("#svg_1189").css({'fill':'#72c5c7','stroke':'#184f5d'});
                   $("#svg_1248").css({'fill':'none','stroke':'#184f5d'});
                   $("#svg_1302").css({'fill':'none','stroke':'#184f5d'});
@@ -438,7 +438,7 @@
 
               });
 
-              $("#svg_174").mouseout(function() {
+              /*$("#svg_174").mouseout(function() {
                   $("#svg_1189").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_1248").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1302").css({'fill':'none','stroke':'#E2E2E1'});
@@ -459,11 +459,11 @@
                   $("#svg_1919").css({'fill':'#E2E2E1','stroke':'none'});
                   $("#svg_1922").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1924").css({'fill':'#E2E2E1','stroke':'none'});
-              });
+              });*/
 
 
               //EVALUACIÓN
-              $("#svg_203").mouseover(function() {
+              $("#svg_203").click(function() {
                   $("#svg_1414").css({'fill':'none','stroke':'#c91517'});
                   $("#svg_1446").css({'fill':'#ea5360','stroke':'#c91517'});
                   $("#svg_1493").css({'fill':'#ea5360','stroke':'#c91517'});
@@ -488,7 +488,7 @@
                   $("#svg_1964").css({'fill':'#ea5360','stroke':'none'});
               });
 
-              $("#svg_203").mouseout(function() {
+              /*$("#svg_203").mouseout(function() {
                   $("#svg_1414").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1446").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
                   $("#svg_1493").css({'fill':'#E2E2E1','stroke':'#A09F9F'});
@@ -511,7 +511,8 @@
                   $("#svg_1969").css({'fill':'#E2E2E1','stroke':'none'});
                   $("#svg_1962").css({'fill':'none','stroke':'#E2E2E1'});
                   $("#svg_1964").css({'fill':'#E2E2E1','stroke':'none'});
-              });
+              });*/
+
 
 
  });
