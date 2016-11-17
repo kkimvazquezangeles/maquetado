@@ -4,6 +4,10 @@ body {
   font-size: 12pt;
 }
 
+header {
+    width:1409px;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -32,7 +36,7 @@ body {
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 1409px;
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
@@ -208,6 +212,7 @@ h1 {
   padding: 1em;
   margin: 0 auto; 
   text-align: center;
+  width:1410px;
 }
 
 .footer a {
@@ -660,4 +665,34 @@ i.right {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
+
+imagen {
+    height:100%;
+}
+
+svg {
+    position:relative;
+    /*left:180px;*/
+    /*bottom:300px;*/
+    z-index:0;
+}
+
+#flechas {
+position: relative;
+    left: 390px;
+    top: -550px;
+    z-index: 4;
+    /* width: 1050px; */
+    height: 500px;
+    /*position:relative;
+    left:600px;
+    top:80px;
+    z-index:4;*/
+}
+
+.w3-container{padding:0.01em 16px}
+.w3-modal{padding-top:50px}
+.w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.w3-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit;cursor:pointer}
 

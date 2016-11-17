@@ -19,6 +19,7 @@ function mostrar(){
 
                   $("#path176").css("stroke", "rgb(206,184,76)");
 
+
                   $(".evaluacion").css("stroke", "rgb(200,197,196)");
                   $("#svg_62").css("stroke", "rgb(200,197,196)");
 

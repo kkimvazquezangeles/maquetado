@@ -24,6 +24,7 @@
                   $("#path160").css("stroke", "rgb(115, 196, 199)");
                   
                   $("#path176").css("stroke", "rgb(115, 196, 199)");
+                  document.getElementById('prueba').style.display='block';
                   //alert("here");
 
 
