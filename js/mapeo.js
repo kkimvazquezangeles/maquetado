@@ -356,7 +356,7 @@
               //ADMINISTRACIÓN
               $("#svg_156").click(function() {
                   $("#svg_1068").css({'fill':'#009fe3','stroke':'#1d71b8'});
-                  $("#svg_1114").css({'fill':'none','stroke':'#1d71b8'});
+                  $("#svg_1114").css({'fill':'ffffff','stroke':'#1d71b8'});
                   $("#svg_1138").css({'fill':'ffffff','stroke':'#1d71b8'});
                   $("#svg_1164").css({'fill':'ffffff','stroke':'#1d71b8'});
                   $("#svg_903").css({'fill':'#009fe3','stroke':'#1d71b8'});
@@ -417,7 +417,7 @@
               //PROSPECTIVA
               $("#svg_174").click(function() {
                   $("#svg_1189").css({'fill':'#72c5c7','stroke':'#184f5d'});
-                  $("#svg_1248").css({'fill':'none','stroke':'#184f5d'});
+                  $("#svg_1248").css({'fill':'ffffff','stroke':'#184f5d'});
                   $("#svg_1302").css({'fill':'ffffff','stroke':'#184f5d'});
                   $("#svg_1350").css({'fill':'ffffff','stroke':'#184f5d'});
                   $("#svg_480").css({'fill':'#72c5c7','stroke':'#184f5d'});
