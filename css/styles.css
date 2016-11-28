@@ -6,6 +6,7 @@ body {
 
 header {
     width:1409px;
+    margin: 0 auto;
 }
 
 #cssmenu,
@@ -36,9 +37,10 @@ header {
   display: none;
 }
 #cssmenu {
-  width: 1409px;
+  width: 1410px;
   font-family: Raleway, sans-serif;
   line-height: 1;
+  margin: 0 auto;
 }
 #cssmenu > ul {
   background: #55A4C3;
@@ -212,7 +214,7 @@ h1 {
   padding: 1em;
   margin: 0 auto; 
   text-align: center;
-  width:1410px;
+  width:1386px;
 }
 
 .footer a {
@@ -678,16 +680,12 @@ svg {
 }
 
 #flechas {
-position: relative;
-    left: 390px;
-    top: -550px;
+    position: relative;
+    left: 710px;
+    top: -370px;
     z-index: 4;
-    /* width: 1050px; */
-    height: 500px;
-    /*position:relative;
-    left:600px;
-    top:80px;
-    z-index:4;*/
+    /* width: 400px; */
+    /* height: 500px; */
 }
 
 .w3-container{padding:0.01em 16px}
