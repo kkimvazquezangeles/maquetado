@@ -27,6 +27,11 @@
       <div class="fecha">
       <script type="text/javascript">
             document.write(fecha());
+
+            $(window).resize(function() {
+                var leftpos = $("#normatividad").position().left + 238.5;
+                $("#flechas").css({left: leftpos});
+            });
       </script>
       </div>
       <picture class="logos">
@@ -105,9 +110,12 @@
       <script type="text/javascript" src="js/normatividad.js"></script>
       <script type="text/javascript">
         $(document).ready(function(){
-          $('.collapsible').collapsible({
-            accordion : false
-          });
+            $('.collapsible').collapsible({
+                accordion : false
+            });
+
+            var leftpos = $("#normatividad").position().left + 238.5;
+            $("#flechas").css({left: leftpos});
         });
      </script>
     <script>
