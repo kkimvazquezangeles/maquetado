@@ -681,9 +681,10 @@ svg {
 
 #flechas {
     position: relative;
-    left: 710px;
+    /*left: 710px;*/
     top: -370px;
     z-index: 4;
+    margin: 0 auto;
     /* width: 400px; */
     /* height: 500px; */
 }
